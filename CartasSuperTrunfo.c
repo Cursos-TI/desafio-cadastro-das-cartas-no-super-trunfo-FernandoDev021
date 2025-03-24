@@ -3,206 +3,155 @@ int main(){
  //fase de declaração de variaveis
 
     //letra do estado
-    char estado1, estado2, estado3, estado4, estado5, estado6, estado7, estado8;
-    char estado9, estado10, estado11, estado12, estado13, estado14, estado15, estado16;
+    char estado1, estado2;
 
     //numero da cidade
-    int cidade1, cidade2, cidade3, cidade4;
-    int cidade5, cidade6, cidade7, cidade8;
-    int cidade9, cidade10, cidade11, cidade12;
-    int cidade13, cidade14, cidade15, cidade16;
-    int cidade17, cidade18, cidade19, cidade20;
-    int cidade21, cidade22, cidade23, cidade24;
-    int cidade35, cidade26, cidade27, cidade28;
-    int cidade29, cidade30, cidade31, cidade32;
+    int cidade1, cidade2;
 
     //nome das cidades
-    char n1[40], n2[40], n3[40], n4[30], n5[40], n6[40], n7[40], n8[40];
-    char n9[40], n10[40], n11[40], n12[30], n13[40], n14[40], n15[40], n16[40];
-    char n17[40], n18[40], n19[40], n20[30], n21[40], n22[40], n23[40], n24[40];
-    char n25[40], n26[40], n27[40], n28[30], n29[40], n30[40], n31[40], n32[40];
+    char n1[40], n2[40];
     
     //area das cidades
-    float area1, area2, area3, area4, area5, area6, area7, area8;
-    float area9, area10, area11, area12, area13, area14, area15, area16;
-    float area17, area18, area19, area20, area21, area22, area23, area24;
-    float area25, area26, area27, area28, area29, area30, area31, area32;
+    float area1, area2;
 
     //pib das cidades
-    float pib1, pib2, pib3, pib4, pib5, pib6, pib7, pib8;
-    float pib9, pib10, pib11, pib12, pib13, pib14, pib15, pib16;
-    float pib17, pib18, pib19, pib20, pib21, pib22, pib23, pib24;
-    float pib25, pib26, pib27, pib28, pib29, pib30, pib31, pib32;
+    float pib1, pib2;
 
     //população das cidades
-    int pop1, pop2, pop3, pop4, pop5, pop6, pop7, pop8;
-    int pop9, pop10, pop11, pop12, pop13, pop14, pop15, pop16;
-    int pop17, pop18, pop19, pop20, pop21, pop22, pop23, pop24;
-    int popG025, pop26, pop27, pop28, pop29, pop30, pop31, pop32;
+    int pop1, pop2;
 
     //pontos turisticos das cidades
-    int turist1, turist2, turist3, turist4, turist5, turist6;
-    int turist7, turist8, turist9, turist10, turist11, turist12;
-    int turist13, turist14, turist15, turist16, turist17, turist18;
-    int turist19, turist20, turist21, turist22, turist23, turist24;
-    int turist25, turist26, turist27, turist28, turist29, turist30;
-    int turist31, turist32;
+    int turist1, turist2;
 
-    char opcao;
-    char menu;
+    float dens1, dens2;
+
+    float pibp1, pibp2;
+
+
 
     printf("===Bem-vindo ao Super Trunfo: Paísess===\n");
     printf("\n");
-    printf("você deve cadastrar oito estados, para cada estado, \n");
-    printf("você irá cadastrar quatro cartas, cada uma representando\n");
-    printf("uma cidade diferente daquele estado.\n");
-    printf("cada estado será denominado por uma letra, de A a H, \n");
-    printf("para facilitar o entendimento.\n");
-    printf("as cidades tambem serão identificadas por numeros, de 1 a 4");
+    printf("para começar você deve cadastrar duas cartas");
+    printf("\n\n");
+
+
+    printf("entre com a letra do estado(de A a H): ");
+    scanf("%c", &estado1);
+    printf(" \n");
+    printf("entre com o número da cidade(de 1 a 4)(você pode atécadastrar 4 cidades para 1 estado): ");
+    scanf("%d", &cidade1);
     printf("\n");
-    printf("*****você precisa cadastrar pelo menos duas cartas para começar*****\n");
+    printf("entre com o nome da cidade: ");
+    scanf("%s", &n1);
+    printf("\n");
+    printf("entre com a área da cidade(em formato decimal, ex. 3467.53): ");
+    scanf("%f", &area1);
+    printf("\n");
+    printf("entre com o pib da cidade(em formato decimal, ex. 4738.51): ");
+    scanf("%f", &pib1);
+    printf("\n");
+    printf("entre com a população(em formato inteiro, ex. 27318): ");
+    scanf("%d", &pop1);
+    printf("\n");
+    printf("entre com o numero de pontos turisticos(em formato inteiro, ex. 8723): ");
+    scanf("%d", &turist1);
     printf("\n");
 
-    printf("entre com os dados da carta\n");
-    printf("entre com a letra do estado dessa carta: ");
-    scanf("%c", &opcao);
-    switch(opcao){
-        case 'a':
-        estado1 = 'a';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'b':
-        estado1 = 'b';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'c':
-        estado1 = 'c';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'd':
-        estado1 = 'd';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'e':
-        estado1 = 'e';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'f':
-        estado1 = 'f';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'g':
-        estado1 = 'g';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
-        case 'h':
-        estado1 = 'h';
-        printf("entre com o número da cidade: ");
-        scanf("%d", &cidade1);
-        printf("entre com o nome da cidade: ");
-        scanf(" %s", &n1);
-        printf("entre com a quantidade da habtantes(em formato inteiro): ");
-        scanf("%d", &pop1);
-        printf("entre com a area da cidade(em formato decimal, ex. 241.54): ");
-        scanf("%f", &area1);
-        printf("entre com o pib(em formato decimal, ex. 3415.98): ");
-        scanf("%f", &pib1);
-        printf("entre com o numero de pontos turisticos(em formato inteiro): ");
-        scanf("%d", &turist1);
-        break;
+    printf("vamos cadastrar a segunda carta\n");
+
+    printf("entre com a letra do estado (de A a H): ");
+    scanf(" %c", &estado2);
+    printf("\n");
+    printf("entre com o número da cidade(de 1 a 4)(você pode atécadastrar 4 cidades para 1 estado): ");
+    scanf("%d", &cidade2);
+    printf("\n");
+    printf("entre com o nome da cidade: ");
+    scanf(" %s", &n2);
+    printf("\n");
+    printf("entre com a área da cidade(em formato decimal, ex. 3467.53): ");
+    scanf("%f", &area2);
+    printf("\n");
+    printf("entre com o pib da cidade(em formato decimal, ex. 4738.51): ");
+    scanf("%f", &pib2);
+    printf("\n");
+    printf("entre com a população(em formato inteiro, ex. 27318): ");
+    scanf("%d", &pop2);
+    printf("\n");
+    printf("entre com o numero de pontos turisticos(em formato inteiro, ex. 8723): ");
+    scanf("%d", &turist2);
+    printf("\n");
+
+    dens1 = pop1 / area1;
+    dens2 = pop2 / area2;
+
+    pibp1 = pib1 / pop1;
+    pibp2 = pib2 / pop2;
+
+    float poder1 = pop1 + area1 + pib1 + turist1 + pibp1 - dens1;
+    float poder2 = pop2 + area2 + pib2 + turist2 + pibp2 - dens2;
 
 
-    }//fim do switch
+    printf("=====as cartas são:===== \n");
+
+    printf("codigo da carta(letra do estado+número da carta): %c%d\n", estado1, cidade1);
+    printf("cidade de: %s\n", n1);
+    printf("população: %d de habitantes\n", pop1);
+    printf("area da cidade: %.2f km\n", area1);
+    printf("pib da cidade : %.2f de reais\n", pib1);
+    printf("densidade populacional: %.2f hab/km2\n", dens1);
+    printf("pib per capita: %.2f reais\n", pibp1);
+    printf("numero de pontos turisticos: %d\n", turist1);
+    printf("poder da carta: %.3f \n\n\n", poder1);
+
+    printf("codigo da carta(letra do estado+número da carta): %c%d\n", estado2, cidade2);
+    printf("cidade de: %s\n", n2);
+    printf("população: %d de habitantes\n", pop2);
+    printf("area da cidade: %.2f km\n", area2);
+    printf("pib da cidade : %.2f de reais\n", pib2);
+    printf("densidade populacional: %.2f hab/km2\n", dens2);
+    printf("pib per capita: %.2f reais\n", pibp2);
+    printf("numero de pontos turisticos: %d\n", turist2);
+    printf("poder: %.3f\n", poder2);
+
+    printf("resultados a baixo:\n");
+
+    if(pop1 > pop2){
+        printf("populacao: carta 1 venceu(1)\n");
+    }else{
+        printf("populacao: carta 2 venceu(0)\n");
+    }
+    if(area1 > area2){
+        printf("area: carta 1 ganhou(1)\n");
+    }else{
+        printf("area: carta 2 venceu(0)\n");
+    }
+    if(pib1 > pib2){
+        printf("pib: carta 1 venceu(1)\n");
+    }else{
+        printf("pib: carta 2 venceu(0)\n");
+    }
+    if(turist1 > turist2){
+        printf("pontos turisticos: carta 1 venceu(1)\n");
+    }else{
+        printf("pontos turisticos: carta 2 venceu(0)\n");
+    }
+    if(dens1 > dens2){
+        printf("densidade populacional: carta 1 venceu(1)\n");
+    }else{
+        printf("densidade populacional: carta 2 venceu(0)\n");
+    }
+    if(pibp1 > pibp2){
+        printf("pib per capita: carta 1 venceu(1)\n");
+    }else{
+        printf("pib per capita: carta 2 venceu(0)\n");
+    }
+    if(poder1 > poder2){
+        printf("poder: carta 1 venceu(1)\n");
+    }else{
+        printf("poder: carta 2 venceu(0)\n");
+    }
 
 
-
-
-    
-
-    //testes
-    printf("%c %d", estado1, cidade1);
-    printf("%s", n1);
-    printf("%.2f", pib1);
-    printf("%.2f", area1);
-    printf("%d", pop1);
-    printf("%d", turist1);
     return 0;
 
 
